@@ -5,9 +5,9 @@ Application android pour d'une liste de contact
 # 2 Étapes
 
 ## 2.1 Examinez le code fourni
-
-Examinez attentivement le code fourni, et comprenez-en la structure. Toutes les classes nécessaires sont déjà
-présentes, mais aucune méthode, sauf une, n’est déjà implémentée.
+```diff
+-Examinez attentivement le code fourni, et comprenez-en la structure. Toutes les classes nécessaires sont déjà
+-présentes, mais aucune méthode, sauf une, n’est déjà implémentée.
 Il ne devrait pas être nécessaire de créer aucune nouvelle classe, mais vous devrez modifier celles déjà
 présentes. En particulier, vous devrez implémenter des nouvelles méthodes qui ne sont pas déjà présentes
 dans les squelettes de classe fournie. (Même s’il ne devrait pas être nécessaire de créer de nouvelles classes, il
@@ -21,6 +21,7 @@ ne pouvez pas en enlever.
 accomplir les tâches ci-dessous, il ne devait pas être nécessaire d’y apporter des modifications substantielles.
 Notez la présence, dans le dossier "drawable", de plusieurs icones que vous pourrez utiliser dans votre
 implantation pour les différents boutons et menus.
+```
 
 ## 2.2 Implémentez les menus (10 points)
 
