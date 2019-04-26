@@ -2,8 +2,9 @@
 Application android pour d'une liste de contact
 
 
-#2 Étapes
-##2.1 Examinez le code fourni
+# 2 Étapes
+
+## 2.1 Examinez le code fourni
 
 Examinez attentivement le code fourni, et comprenez-en la structure. Toutes les classes nécessaires sont déjà
 présentes, mais aucune méthode, sauf une, n’est déjà implémentée.
@@ -21,7 +22,7 @@ accomplir les tâches ci-dessous, il ne devait pas être nécessaire d’y appor
 Notez la présence, dans le dossier "drawable", de plusieurs icones que vous pourrez utiliser dans votre
 implantation pour les différents boutons et menus.
 
-##2.2 Implémentez les menus (10 points)
+## 2.2 Implémentez les menus (10 points)
 
 La sélection du filtre pour favoris dans l’Activity principale est implémentée avec un menu BottomNavigationView.
 Le bouton pour créer un nouveau contact, quant à lui, est implémenté à l’aide d’un option menu régulier. Il en
@@ -30,11 +31,11 @@ est de même pour le bouton "sauvegarder le contact" de l’écran d’édition.
 les boutons devraient être présents. Vous devriez déjà implémenter, par contre, le code permettant d’ouvrir
 l’activité d’édition de contact lors d’un clic sur le bouton "nouveau contact".
 
-##2.3 Ajoutez les icônes, les "hints" et les formats de champs à l’écran d’édition de contact (5 points)
+## 2.3 Ajoutez les icônes, les "hints" et les formats de champs à l’écran d’édition de contact (5 points)
 L’Activity d’édition de contact n’a pas les pictogrammes ni les "hints" accompagnant les différents champs.
 De plus, les champs n’ont aucun type spécifié. Modifiez le layout pour les ajouter.
 
-##2.4 Implémentez la classe Contact (10 points)
+## 2.4 Implémentez la classe Contact (10 points)
 
 La classe contact représente un contact dans le carnet d’adresse.
 Elle doit stocker les informations suivantes : Son prénom, son nom, son adresse courriel, son numéro de
@@ -44,12 +45,12 @@ erreur particulière n’a à être provoquée si un numéro téléphone ou une 
 ni si le numéro de série n’est pas unique. Il est aussi permis de stocker le numéro de téléphone comme une
 simple String.
 
-##2.5 Utilisez les Data Bindings pour lier ensemble la classe Contact et l’Activity d’édition de contact (15 points)
+## 2.5 Utilisez les Data Bindings pour lier ensemble la classe Contact et l’Activity d’édition de contact (15 points)
 Utilisez le système de Data Binding d’Android pour lier ensemble la classe Contact et l’Activity d’édition
 de contact.
 Assurez-vous que cette liaison est bidirectionnelle !
 
-##2.6 Implémentez la classe DBHelper (20 points)
+## 2.6 Implémentez la classe DBHelper (20 points)
 
 La classe DBHelper permet de construire, gêrer et accéder à la base de donnée de contacts. Construisez-la
 selon le modèle montré pendant les périodes de démonstrations !
@@ -68,7 +69,8 @@ point d’utilisation que ceux-ci seront classés par ordre alphabétique.
 — Il n’est pas nécessaire de faire une implémentation "gracieuse" de onUpgrade. Simplement détruire
 la base de donnée et la recréer est suffisant pour le présent travail.
 
-##2.7 Implémentez la liste de contact de l’Activity principale (15 points) Implémentez les classes ContactRecyclerAdapter, ContactSwipeCallback et
+## 2.7 Implémentez la liste de contact de l’Activity principale (15 points) 
+Implémentez les classes ContactRecyclerAdapter, ContactSwipeCallback et
 ContactViewHolder et liez-les au RecyclerView de l’Activity principale pour rendre fonction-
 nelle la liste de contacts.
 Utilisez les outils de Data Bindings pour lier les différents contacts à chaque item de la liste.
@@ -80,21 +82,21 @@ La méthode ContactSwipeCallback.onChildDraw() est déjà implémentée, et il n
 saire d’y toucher. C’est cette méthode qui permet d’afficher le logo "poubelle" en dessous d’un contact
 lorsqu’on le glisse.
 
-##2.8 Complétez l’implémentation des actions (15 points)
+## 2.8 Complétez l’implémentation des actions (15 points)
 Complétez maintenant l’implémentation des actions sur les différents contacts : appel, ajout, édition et
 destruction, autant dans l’activité principale que dans l’activité d’édition de contact.
 À ce point, l’état de la base de donnée devrait bien être à jour avec les actions réalisées par l’usager, et la liste
 affichée devrais être cohérent avec le contenu de la base de donnée ; même lorsque celle-ci est modifiée par
 l’usager.
 
-##2.9 Préservation de l’état (10 points)
+## 2.9 Préservation de l’état (10 points)
 Votre application doit gêrer correctement la situation lorsque l’écran est basculé. Cela signifie que son état
 doit être préservé même à travers une rotation d’écran.
 Similairement, l’état de l’Activity principale doit être préservé pour être restauré au retour d’une autre
 Activity, comme par exemple après avoir complété un appel téléphonique ou avoir été à l’écran d’édition de
 contact.
 
-##2.10 Bonus : Recherche de contact (10 points)
+## 2.10 Bonus : Recherche de contact (10 points)
 Ajoutez une fonction de recherche à l’Activity principale : Lorsque celle-ci est activée, une barre de recherche
 apparaît en haut de l’écran ; et lorsque l’usager y tape, la liste de contact est automatiquement filtrée pour ne
 maintenir que les contacts dont le nom ou le prénom contient la requête.
