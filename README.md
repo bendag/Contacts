@@ -5,9 +5,9 @@ Application android pour d'une liste de contact
 # 2 Étapes
 
 ## 2.1 Examinez le code fourni
-```diff
--Examinez attentivement le code fourni, et comprenez-en la structure. Toutes les classes nécessaires sont déjà
--présentes, mais aucune méthode, sauf une, n’est déjà implémentée.
+
+Examinez attentivement le code fourni, et comprenez-en la structure. Toutes les classes nécessaires sont déjà
+présentes, mais aucune méthode, sauf une, n’est déjà implémentée.
 Il ne devrait pas être nécessaire de créer aucune nouvelle classe, mais vous devrez modifier celles déjà
 présentes. En particulier, vous devrez implémenter des nouvelles méthodes qui ne sont pas déjà présentes
 dans les squelettes de classe fournie. (Même s’il ne devrait pas être nécessaire de créer de nouvelles classes, il
@@ -21,16 +21,18 @@ ne pouvez pas en enlever.
 accomplir les tâches ci-dessous, il ne devait pas être nécessaire d’y apporter des modifications substantielles.
 Notez la présence, dans le dossier "drawable", de plusieurs icones que vous pourrez utiliser dans votre
 implantation pour les différents boutons et menus.
-```
 
 ## 2.2 Implémentez les menus (10 points)
 
-La sélection du filtre pour favoris dans l’Activity principale est implémentée avec un menu BottomNavigationView.
-Le bouton pour créer un nouveau contact, quant à lui, est implémenté à l’aide d’un option menu régulier. Il en
-est de même pour le bouton "sauvegarder le contact" de l’écran d’édition. Implémentez ces menus !
-À ce point, il n’est pas nécesaire de lier une action particulière à chacun des items de menus, mais tous
-les boutons devraient être présents. Vous devriez déjà implémenter, par contre, le code permettant d’ouvrir
+```diff
++La sélection du filtre pour favoris dans l’Activity principale est implémentée avec un menu BottomNavigationView.
++Le bouton pour créer un nouveau contact, quant à lui, est implémenté à l’aide d’un option menu régulier. Il en
++est de même pour le bouton "sauvegarder le contact" de l’écran d’édition. Implémentez ces menus !
++À ce point, il n’est pas nécesaire de lier une action particulière à chacun des items de menus, mais tous
++les boutons devraient être présents. 
+Vous devriez déjà implémenter, par contre, le code permettant d’ouvrir
 l’activité d’édition de contact lors d’un clic sur le bouton "nouveau contact".
+```
 
 ## 2.3 Ajoutez les icônes, les "hints" et les formats de champs à l’écran d’édition de contact (5 points)
 L’Activity d’édition de contact n’a pas les pictogrammes ni les "hints" accompagnant les différents champs.
