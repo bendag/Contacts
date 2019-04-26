@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/edit_contact_image"
+            app:srcCompat="@drawable/ic_person" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <ImageView
+                    android:padding="3dip" />
+
+                <EditText
+                    android:gravity="start"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:padding="3dip" />
+
+                <EditText
+                    android:gravity="start"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:padding="3dip" />
+
+                <EditText
+                    android:id="@+id/contact_edit_last_name"
+                    android:gravity="start"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:padding="3dip" />
+                <EditText
+                    android:gravity="start"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:padding="3dip" />
+                <Switch
+                    android:gravity="start"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

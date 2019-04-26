@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="favorites">Favorites</string>
+    <string name="all_contacts">All</string>
+
+    <string name="add">Ajouter</string>
+</resources>
