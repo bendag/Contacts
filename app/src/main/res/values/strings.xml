@@ -4,4 +4,11 @@
     <string name="all_contacts">All</string>
 
     <string name="add">Ajouter</string>
+
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="email">Email address</string>
+    <string name="phone">Phone number</string>
+    <string name="favorite">Favorite</string>
+
 </resources>

@@ -23,12 +23,16 @@
             android:stretchColumns="1">
 
             <TableRow>
+
                 <ImageView
+                    android:layout_width="24dp"
                     android:padding="3dip" />
 
                 <EditText
+                    android:id="@+id/firstName"
                     android:gravity="start"
-                    android:padding="3dip" />
+                    android:padding="3dip"
+                    android:hint="@string/firstName"/>
             </TableRow>
 
             <TableRow>
@@ -36,35 +40,52 @@
                     android:padding="3dip" />
 
                 <EditText
+                    android:id="@+id/LastName"
                     android:gravity="start"
-                    android:padding="3dip" />
+                    android:padding="3dip"
+                    android:hint="@string/lastName"/>
             </TableRow>
 
             <TableRow>
+
                 <ImageView
-                    android:padding="3dip" />
+                    android:id="@+id/email_icon"
+                    android:padding="3dip"
+                    app:srcCompat="@drawable/ic_email" />
 
                 <EditText
-                    android:id="@+id/contact_edit_last_name"
+                    android:id="@+id/email"
                     android:gravity="start"
-                    android:padding="3dip" />
+                    android:padding="3dip"
+                    android:hint="@string/email"/>
             </TableRow>
 
             <TableRow>
+
                 <ImageView
-                    android:padding="3dip" />
+                    android:id="@+id/phone_icon"
+                    android:padding="3dip"
+                    app:srcCompat="@drawable/ic_call" />
+
                 <EditText
+                    android:id="@+id/phone"
                     android:gravity="start"
-                    android:padding="3dip" />
+                    android:padding="3dip"
+                    android:hint="@string/phone"/>
             </TableRow>
 
             <TableRow>
 
                 <ImageView
-                    android:padding="3dip" />
+                    android:id="@+id/favorite_icon"
+                    android:padding="3dip"
+                    app:srcCompat="@drawable/ic_favorites" />
+
                 <Switch
+                    android:id="@+id/favorite"
                     android:gravity="start"
-                    android:padding="3dip" />
+                    android:padding="3dip"
+                    android:text="@string/favorite" />
             </TableRow>
         </TableLayout>
     </LinearLayout>

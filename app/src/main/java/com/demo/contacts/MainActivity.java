@@ -1,5 +1,6 @@
 package com.demo.contacts;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.menu_add:
+                Intent intent = new Intent(this, EditContactActivity.class);
+                startActivity(intent);
 
         }
         return super.onOptionsItemSelected(item);
