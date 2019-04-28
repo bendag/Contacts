@@ -42,18 +42,23 @@ implantation pour les différents boutons et menus.
 
 ## 2.4 Implémentez la classe Contact (10 points)
 
-La classe contact représente un contact dans le carnet d’adresse.
-Elle doit stocker les informations suivantes : Son prénom, son nom, son adresse courriel, son numéro de
-téléphone, un numéro d’identification unique, et une mention si le contact est favori ou non.
-Il n’est pas nécessaire d’effectuer aucune validation sur les informations fournies à la classe. Ainsi, aucune
-erreur particulière n’a à être provoquée si un numéro téléphone ou une adresse courriel invalide est fournie,
-ni si le numéro de série n’est pas unique. Il est aussi permis de stocker le numéro de téléphone comme une
-simple String.
+```diff
++La classe contact représente un contact dans le carnet d’adresse.
++Elle doit stocker les informations suivantes : Son prénom, son nom, son adresse courriel, son numéro de
++téléphone, un numéro d’identification unique, et une mention si le contact est favori ou non.
++Il n’est pas nécessaire d’effectuer aucune validation sur les informations fournies à la classe. Ainsi, aucune
++erreur particulière n’a à être provoquée si un numéro téléphone ou une adresse courriel invalide est fournie,
++ni si le numéro de série n’est pas unique. Il est aussi permis de stocker le numéro de téléphone comme une
++simple String.
+```
 
 ## 2.5 Utilisez les Data Bindings pour lier ensemble la classe Contact et l’Activity d’édition de contact (15 points)
-Utilisez le système de Data Binding d’Android pour lier ensemble la classe Contact et l’Activity d’édition
-de contact.
-Assurez-vous que cette liaison est bidirectionnelle !
+
+```diff
++Utilisez le système de Data Binding d’Android pour lier ensemble la classe Contact et l’Activity d’édition
++de contact.
++Assurez-vous que cette liaison est bidirectionnelle !
+```
 
 ## 2.6 Implémentez la classe DBHelper (20 points)
 
