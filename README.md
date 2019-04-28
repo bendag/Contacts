@@ -30,13 +30,15 @@ implantation pour les différents boutons et menus.
 +est de même pour le bouton "sauvegarder le contact" de l’écran d’édition. Implémentez ces menus !
 +À ce point, il n’est pas nécesaire de lier une action particulière à chacun des items de menus, mais tous
 +les boutons devraient être présents. 
-Vous devriez déjà implémenter, par contre, le code permettant d’ouvrir
-l’activité d’édition de contact lors d’un clic sur le bouton "nouveau contact".
++Vous devriez déjà implémenter, par contre, le code permettant d’ouvrir
++l’activité d’édition de contact lors d’un clic sur le bouton "nouveau contact".
 ```
 
 ## 2.3 Ajoutez les icônes, les "hints" et les formats de champs à l’écran d’édition de contact (5 points)
-L’Activity d’édition de contact n’a pas les pictogrammes ni les "hints" accompagnant les différents champs.
-De plus, les champs n’ont aucun type spécifié. Modifiez le layout pour les ajouter.
+```diff
++L’Activity d’édition de contact n’a pas les pictogrammes ni les "hints" accompagnant les différents champs.
++De plus, les champs n’ont aucun type spécifié. Modifiez le layout pour les ajouter.
+```
 
 ## 2.4 Implémentez la classe Contact (10 points)
 
