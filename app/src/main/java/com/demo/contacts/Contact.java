@@ -3,7 +3,9 @@ package com.demo.contacts;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
-public class Contact extends BaseObservable {
+import java.io.Serializable;
+
+public class Contact extends BaseObservable implements Serializable {
 
     // À implémenter
 

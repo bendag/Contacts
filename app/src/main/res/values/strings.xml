@@ -4,6 +4,11 @@
     <string name="all_contacts">All</string>
 
     <string name="add">Ajouter</string>
+    <string name="save">Save</string>
+    <string name="space"> </string>
+    <string name="str"></string>
+    <string name="new_contact">New Contact</string>
+    <string name="edit_contact">Edit Contact</string>
 
     <string name="firstName">First name</string>
     <string name="lastName">Last name</string>

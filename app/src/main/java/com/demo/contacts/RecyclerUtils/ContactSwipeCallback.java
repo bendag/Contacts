@@ -1,5 +1,6 @@
 package com.demo.contacts.RecyclerUtils;
 
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -10,34 +11,48 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 
+import com.demo.contacts.MainActivity;
 import com.demo.contacts.R;
 
-class ContactSwipeCallback extends ItemTouchHelper.SimpleCallback {
+public class ContactSwipeCallback extends ItemTouchHelper.SimpleCallback {
     private Drawable icon;
     private int iconWidth;
     private int iconHeight;
+    private Context context;
 
-    ContactSwipeCallback(Context context) {
+    public ContactSwipeCallback(Context context) {
         // À implémenter. Vous avez le droit de changer la signature du constructeur.
         super(0,0);
-
+        this.context = context;
         icon = context.getDrawable(R.drawable.ic_delete);
         iconWidth = icon.getIntrinsicWidth();
         iconHeight = icon.getIntrinsicHeight();
     }
 
+
+
+    @Override
+    public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+        int dragFlags = ItemTouchHelper.UP | ItemTouchHelper.DOWN;
+        int swipeFlags = ItemTouchHelper.LEFT; //On bouje a gauche seulement
+        return makeMovementFlags(dragFlags, swipeFlags);
+    }
+
+
+
     @Override
     public boolean onMove(@NonNull RecyclerView recyclerView,
                           @NonNull RecyclerView.ViewHolder viewHolder,
                           @NonNull RecyclerView.ViewHolder target) {
-        // À implémenter
         return false;
     }
 
 
     @Override
     public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction){
-        // À implémenter
+        int position = viewHolder.getAdapterPosition();
+            MainActivity main = (MainActivity)context;
+            main.deleteContact(position); //on appel deleteContact() de la classe MainActivity
     }
 
     @Override

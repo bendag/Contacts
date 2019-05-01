@@ -1,26 +1,59 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/contact_list_item_initials"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24dp" />
+    <data>
+        <variable
+            name="contact"
+            type="com.demo.contacts.Contact"/>
+    </data>
 
-    <TextView
-        android:id="@+id/contact_list_item_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="5dp"
-        android:layout_weight="1"
-        android:ellipsize="end"
-        android:singleLine="true"
-        android:textSize="20sp" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/list_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39999998"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/contact_list_item_initials"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="@{(((contact.firstName != null &amp;&amp; contact.firstName.length()>0) ? (@string/str)+contact.firstName.charAt(0) : (@string/str))+((contact.lastName != null &amp;&amp; contact.lastName.length()>0) ? (@string/str)+contact.lastName.charAt(0) : (@string/str))).toUpperCase()}"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/contact_list_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{contact.firstName+` `+contact.lastName}"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>
